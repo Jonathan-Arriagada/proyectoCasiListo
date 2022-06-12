@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Parquelectro</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Nav-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light barra">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="/index.html">PE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Informacion</a></li>
+                    </ul>
+                 <!-- Carrito-->
+                    <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                          <i class="bi-cart-fill me-1"></i>
+                             Carrito
+                        </button>
+                    </form>
+        </nav>
+        <div class="offcanvas offcanvas-start-lg" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Carrito</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Producto:</th>
+                                <th scope="col">Cantidad:</th>
+                                <th scope="col">Nombre:</th>
+                                <th scope="col">Precio:</th>
+                                <th scope="col">Subtotal:</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablaCarrito">
+        
+                        </tbody>
+                    </table>
+                    <h4>Total:</h4>
+                    <div id="totalCarrito">
+
+                    </div>   
+              </div>
+              <button class="btn btn-outline-dark" id="pagar">Pagar con MercadoPago</button>
+              <button class="btn btn-outline-dark" id="botonFinalizar">Pagar en Local</button>
+              <button class="btn btn-outline-dark" id="vaciar">Vaciar Carrito</button>
+            </div>
+        </div>
+        <!-- Header-->
+        <header class="py-5 fondo">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Parquelectro</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Tu sitio de confianza.</p>
+                </div>
+            </div>
+        </header>
+        
+        <input type="text" id="formulario" class="form-control w-25 my-2">
+        <button class="btn btn-info mb-2" id="buscar">Buscar</button>
+        <div id="resultado"></div>
+        <!--Section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div id="divProductos" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+    
+                </div>
+            </div>
+        </section> 
+        <aside class="d-flex justify-content-center">
+            <div class="card" style="width: 18rem; margin-top: 25px; background-color: rgba(128, 128, 128, 0.493);">
+              <img src="./images/ubicacion.jpg" class="card-img-top" alt="imagen de google maps">
+              <div class="card-body" >
+                <h5 class="card-title" style="font-weight: bold;">Contactanos</h5>
+                <p class="card-text">Podes encontrarnos en nuestro local a la calle.</p>
+                <a href="./pages/contacto.html?#ubi" class="btn btn-primary">Te esperamos</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem; margin-top: 25px; margin-left: 100px; background-color: rgba(128, 128, 128, 0.493);">
+              <img src="./images/pagaencuotas.jpg" class="card-img-top" ; alt="imagen de mercadopago">
+              <div class="card-body" >
+                <h5 class="card-title" style="font-weight: bold;">Aceptamos Mercadopago</h5>
+                <p class="card-text">Abona en cuotas sin interés con Mercagopago.</p>
+              </div>
+            </div>  
+          </aside>  
+        <div class="wp">
+            <!-- Logo de Whatsapp para poder consultar directamente con el numero de contacto -->
+            <a href="https://wa.me/+5491169507611/?text=Buen dia">
+                <img src="/images/WhatsApp.svg.png" width="50px" height="50px" alt="logo de whatsapp"/>
+            </a>
+          </div>
+        <!-- Footer-->  
+        <footer class="barra">
+            <div>        
+              <div class="redes text-white">
+                <img src="/images/facebook.svg" alt="logo de facebook">
+                <label>Facebook</label>
+              </div>
+              <div class="redes text-white">
+                <img src="/images/instagram.png" alt="logo de instagram">
+                <label>Instagram</label>
+              </div>
+              <div class="redes text-white">
+                <img src="/images/twitter.svg" alt="logo de twitter">
+                <label>Twitter</label>
+              </div>
+            </div>
+            <div class="container-footer">
+              <p class="m-0 text-center text-white">&copy Jonathan Arriagada</p>
+            </div>
+            
+          </footer>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.14/dist/sweetalert2.all.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

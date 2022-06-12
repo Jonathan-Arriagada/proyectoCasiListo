@@ -1,0 +1,58 @@
+
+[
+    {
+        "id": "1",
+        "nombre": "Cargador Wire",
+        "precio": 1200,
+        "img": "../images/producto1.png",
+        "stock": 100            
+    },
+    {
+        "id": "2",
+        "nombre": "Cargador USB",
+        "precio": 800,
+        "img":"../images/producto2.png",
+        "stock": 100
+    },
+    {
+        "id": "3",
+        "nombre":"Auriculares",
+        "precio": 3000,
+        "img":"../images/producto3.png",
+        "stock": 100
+    },
+    {
+        "id": "4",
+        "nombre":"Teclado Gamer",
+        "precio": 6000,
+        "img":"../images/producto4.png",
+        "stock": 100
+    },
+    {
+        "id": "5",
+        "nombre":"Joystick PS4",
+        "precio": 12000,
+        "img":"../images/producto5.png",
+        "stock": 100
+    },
+    {
+        "id": "6",
+        "nombre":"Joystick PS5",
+        "precio": 14000,
+        "img":"../images/producto6.png"
+    },  
+    {
+        "id": "7",
+        "nombre":"Joystick XBOX",
+        "precio": 13000,
+        "img":"../images/producto7.png",
+        "stock": 100
+    },  
+    {
+        "id": "8",
+        "nombre":"Mouse Gamer",
+        "precio": 3500,
+        "img":"../images/producto8.png",
+        "stock": 100
+    }
+]
